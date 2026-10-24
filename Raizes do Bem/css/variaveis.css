@@ -1,0 +1,26 @@
+:root {
+  --verde: #0b3a2a;
+  --verde-escuro: #062314;
+  --verde-claro: #e7f0ea;
+  --dourado: #e6c1a3;
+  --laranja: #8a6244;
+  --laranja-claro: #f6efe6;
+  --vermelho: #8f3d32;
+  --cinza-escuro: #14241c;
+  --cinza: #5e6a62;
+  --cinza-claro: #f7f4ef;
+
+  --fonte-pequena: 14px;
+  --fonte-normal: 16px;
+  --fonte-media: 20px;
+  --fonte-grande: 28px;
+  --fonte-titulo: 38px;
+  --fonte-hero: 48px;
+
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - Raízes do Bem</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="pagina">
+  <header>
+    <div class="container menu-topo">
+      <a class="logo" href="index.html"><img src="imagens/logo.png" alt="" width="48" height="48"> Raízes do Bem</a>
+      <button id="botao-menu" aria-label="Abrir menu">☰</button>
+      <ul id="menu">
+        <li><a class="ativo" href="index.html">Início</a></li>
+        <li class="com-submenu">
+          <a href="index.html#projetos">Projetos ▾</a>
+          <ul class="submenu">
+            <li><a href="paginas/educacao.html">Educação</a></li>
+            <li><a href="paginas/meio-ambiente.html">Meio ambiente</a></li>
+            <li><a href="paginas/saude.html">Saúde</a></li>
+          </ul>
+        </li>
+        <li><a href="paginas/voluntario.html">Seja voluntário</a></li>
+        <li><a href="paginas/comunidade.html">Comunidade</a></li>
+        <li><a class="botao botao-pequeno" href="paginas/voluntario.html?doar=1">Doar agora</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="container hero">
+      <div>
+        <span class="badge badge-laranja">Campanha 2026</span>
+        <h1>Cada hora doada planta o futuro de uma comunidade</h1>
+        <p>Cadastre-se como voluntário, vincule o valor da sua doação e acompanhe tudo na Comunidade.</p>
+        <div class="hero-botoes">
+          <a class="botao" href="paginas/voluntario.html?doar=1">Doar agora</a>
+          <a class="botao botao-contorno" href="paginas/voluntario.html">Quero ser voluntário</a>
+        </div>
+        <ul class="numeros">
+          <li><strong>12 mil</strong>pessoas atendidas</li>
+          <li><strong>480</strong>voluntários</li>
+          <li><strong>27</strong>projetos</li>
+        </ul>
+      </div>
+      <img src="imagens/capa.png" alt="Voluntários da Raízes do Bem" width="600" height="420">
+    </section>
+
+    <section class="secao fundo-cinza" id="projetos">
+      <div class="container">
+        <h2>Projetos em andamento</h2>
+        <p><span class="tag">Educação</span> <span class="tag">Meio ambiente</span> <span class="tag">Saúde</span></p>
+        <div class="linha">
+          <article class="card col-4">
+            <img src="imagens/biblioteca.png" alt="Projeto Biblioteca Viva">
+            <div class="card-corpo">
+              <span class="badge">Educação</span>
+              <h3><a href="paginas/educacao.html">Biblioteca Viva</a></h3>
+              <p>Reforma de bibliotecas comunitárias com acervo infantil.</p>
+              <div class="barra"><div style="width:68%"></div></div>
+              <div class="card-rodape"><span>68% da meta</span><a class="botao botao-contorno botao-pequeno" href="paginas/educacao.html">Ver projeto</a></div>
+            </div>
+          </article>
+          <article class="card col-4">
+            <img src="imagens/rio.png" alt="Projeto Rio Limpo">
+            <div class="card-corpo">
+              <span class="badge badge-azul">Meio ambiente</span>
+              <h3><a href="paginas/meio-ambiente.html">Rio Limpo</a></h3>
+              <p>Mutirões de limpeza e educação ambiental nas margens do rio.</p>
+              <div class="barra"><div style="width:45%"></div></div>
+              <div class="card-rodape"><span>45% da meta</span><a class="botao botao-contorno botao-pequeno" href="paginas/meio-ambiente.html">Ver projeto</a></div>
+            </div>
+          </article>
+          <article class="card col-4">
+            <img src="imagens/saude.png" alt="Projeto Saúde em Casa">
+            <div class="card-corpo">
+              <span class="badge badge-laranja">Saúde</span>
+              <h3><a href="paginas/saude.html">Saúde em Casa</a></h3>
+              <p>Visitas de profissionais a idosos que vivem sozinhos.</p>
+              <div class="barra"><div style="width:82%"></div></div>
+              <div class="card-rodape"><span>82% da meta</span><a class="botao botao-contorno botao-pequeno" href="paginas/saude.html">Ver projeto</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container linha">
+        <div class="col-8">
+          <h2>Transparência em cada real</h2>
+          <p>Para doar, complete o cadastro de voluntário e informe o valor. Nome e doação passam a aparecer na Comunidade.</p>
+          <div class="alerta alerta-info">O relatório do 3º trimestre já está disponível na página Comunidade.</div>
+          <a class="botao" href="paginas/comunidade.html">Ver voluntários e doações</a>
+        </div>
+        <div class="col-4">
+          <h3>Últimas doações</h3>
+          <ul id="lista-doacoes-resumo" class="lista-registros"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container linha">
+      <div class="col-6"><h4>Raízes do Bem</h4><p>Transformamos doações e tempo voluntário em oportunidades.</p></div>
+      <div class="col-3">
+        <a href="index.html">Início</a><br>
+        <a href="paginas/voluntario.html">Voluntariado</a><br>
+        <a href="paginas/comunidade.html">Comunidade</a>
+      </div>
+      <div class="col-3"><p>contato@raizesdobem.org</p></div>
+    </div>
+  </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

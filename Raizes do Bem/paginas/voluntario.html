@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voluntariado - Raízes do Bem</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="pagina">
+  <header>
+    <div class="container menu-topo">
+      <a class="logo" href="../index.html"><img src="../imagens/logo.png" alt="" width="48" height="48"> Raízes do Bem</a>
+      <button id="botao-menu" aria-label="Abrir menu">☰</button>
+      <ul id="menu">
+        <li><a href="../index.html">Início</a></li>
+        <li class="com-submenu">
+          <a href="../index.html#projetos">Projetos ▾</a>
+          <ul class="submenu">
+            <li><a href="educacao.html">Educação</a></li>
+            <li><a href="meio-ambiente.html">Meio ambiente</a></li>
+            <li><a href="saude.html">Saúde</a></li>
+          </ul>
+        </li>
+        <li><a class="ativo" href="voluntario.html">Seja voluntário</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a class="botao botao-pequeno" href="voluntario.html?doar=1#cadastro">Doar agora</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="secao" id="cadastro">
+      <div class="container duas-colunas">
+        <div>
+          <img class="foto-capa" src="../imagens/capa.png" alt="Voluntários da Raízes do Bem">
+          <span class="badge">Voluntariado</span>
+          <h1>Doe seu tempo, mude uma rotina</h1>
+          <p>Preencha o cadastro, escolha a área e, se quiser doar, informe o valor. Os dois registros aparecem na Comunidade.</p>
+          <div class="alerta alerta-info">Todos os campos com * são obrigatórios.</div>
+          <div id="aviso-doacao" class="alerta alerta-aviso" hidden>Você pode informar um valor para doar ou deixar 0 para apenas se inscrever como voluntário.</div>
+          <div id="aviso-projeto" class="alerta alerta-info" hidden></div>
+        </div>
+        <form id="form-voluntario">
+          <input type="hidden" id="projeto" value="">
+          <div>
+            <label for="nome">Nome completo *</label>
+            <input id="nome" type="text" required minlength="3" autocomplete="name">
+            <span class="erro">Digite seu nome completo.</span>
+          </div>
+          <div>
+            <label for="email">E-mail *</label>
+            <input id="email" type="email" required autocomplete="email">
+            <span class="erro">Digite um e-mail válido.</span>
+          </div>
+          <div>
+            <label for="area">Área de interesse</label>
+            <select id="area">
+              <option>Educação</option>
+              <option>Meio ambiente</option>
+              <option>Saúde</option>
+            </select>
+          </div>
+          <div>
+            <label for="valor">Valor da doação (R$)</label>
+            <input id="valor" type="number" min="0" step="5" placeholder="0">
+            <span class="ajuda">Deixe 0 para só se inscrever. Para doar, o mínimo é R$ 5.</span>
+          </div>
+          <div>
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" rows="4"></textarea>
+          </div>
+          <label class="checkbox">
+            <input id="termos" type="checkbox">
+            Aceito os termos de uso *
+          </label>
+          <button class="botao" id="botao-enviar" type="submit" disabled>Enviar cadastro</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container linha">
+      <div class="col-6"><h4>Raízes do Bem</h4><p>Transformamos doações e tempo voluntário em oportunidades.</p></div>
+      <div class="col-3">
+        <a href="../index.html">Início</a><br>
+        <a href="voluntario.html">Voluntariado</a><br>
+        <a href="comunidade.html">Comunidade</a>
+      </div>
+      <div class="col-3"><p>contato@raizesdobem.org</p></div>
+    </div>
+  </footer>
+</div>
+<div id="toast"></div>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+.linha { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--esp-3); }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-8 { grid-column: span 8; }

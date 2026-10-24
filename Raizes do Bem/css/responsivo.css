@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+  .container { max-width: 960px; }
+}
+
+@media (max-width: 992px) {
+  h1 { font-size: 40px; }
+  .col-3, .col-4 { grid-column: span 6; }
+  .col-8 { grid-column: span 12; }
+}
+
+@media (max-width: 768px) {
+  .hero, .duas-colunas { grid-template-columns: 1fr; }
+  .col-6 { grid-column: span 12; }
+
+  #botao-menu { display: block; }
+  #menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  .submenu { display: block; position: static; border: none; width: auto; }
+}
+
+@media (max-width: 576px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: var(--fonte-grande); }
+  .col-3, .col-4 { grid-column: span 12; }
+  .secao { padding: var(--esp-5) 0; }
+}
+
+@media (max-width: 400px) {
+  .numeros { flex-direction: column; gap: 8px; }
+  .hero-botoes .botao { width: 100%; text-align: center; }
+}
